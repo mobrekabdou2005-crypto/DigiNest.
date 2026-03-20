@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury - Artisan Marketplace</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        Enjoy free shipping on artisan orders over $150. <a href="#">Shop now</a>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="header">
+        <div class="header-main">
+            <div class="logo">
+                <a href="#">Luxury.</a>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for anything artisan, vintage, or handmade...">
+                <button class="search-btn"><i data-lucide="search"></i></button>
+            </div>
+            
+            <div class="header-actions">
+                <button class="nav-btn"><span class="btn-text">Sign in</span></button>
+                <button class="icon-btn tooltip" data-tip="Favorites"><i data-lucide="heart"></i></button>
+                <button class="icon-btn tooltip" data-tip="Cart"><i data-lucide="shopping-bag"></i><span class="cart-badge" id="cart-count">0</span></button>
+            </div>
+        </div>
+        
+        <!-- Category Nav -->
+        <nav class="category-nav">
+            <ul>
+                <li><a href="#" class="active">Jewelry & Accessories</a></li>
+                <li><a href="#">Clothing & Shoes</a></li>
+                <li><a href="#">Home & Living</a></li>
+                <li><a href="#">Wedding & Party</a></li>
+                <li><a href="#">Toys & Entertainment</a></li>
+                <li><a href="#">Art & Collectibles</a></li>
+                <li><a href="#">Vintage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Welcome Hero -->
+        <section class="hero-section">
+            <div class="welcome-text">
+                <h1>Find things you'll love. Support independent creators.</h1>
+            </div>
+            
+            <!-- Category Circles -->
+            <div class="circle-categories">
+                <div class="circle-cat">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&q=80" alt="Jewelry"></div>
+                    <span>Jewelry</span>
+                </div>
+                <div class="circle-cat">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=400&q=80" alt="Home Decor"></div>
+                    <span>Home Decor</span>
+                </div>
+                <div class="circle-cat">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1584305886470-43fd2fcab54e?w=400&q=80" alt="Art"></div>
+                    <span>Wall Art</span>
+                </div>
+                <div class="circle-cat">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1514866902268-23e51084d5df?w=400&q=80" alt="Vintage"></div>
+                    <span>Vintage</span>
+                </div>
+                <div class="circle-cat">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=400&q=80" alt="Gifts"></div>
+                    <span>Gifts</span>
+                </div>
+                <div class="circle-cat">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1520981825232-ece5fae45120?w=400&q=80" alt="Clothing"></div>
+                    <span>Clothing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fresh Finds Banner -->
+        <section class="banner-section">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h2>Curated Editor's Picks</h2>
+                    <p>Discover one-of-a-kind pieces that bring elegance to your everyday life.</p>
+                    <button class="btn btn-primary">Shop the Collection</button>
+                </div>
+                <div class="banner-image">
+                    <img src="https://images.unsplash.com/photo-1507646227500-4d389b0012be?w=800&q=80" alt="Artisan Ceramics">
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid Section -->
+        <section class="featured-products">
+            <div class="section-header">
+                <h2>Browse recently viewed & tailored recommendations</h2>
+                <a href="#" class="view-all">See more <i data-lucide="arrow-right"></i></a>
+            </div>
+            
+            <div class="product-grid" id="product-grid">
+                <!-- Products dynamically injected by JS -->
+            </div>
+        </section>
+
+        <!-- Feature Spotlight -->
+        <section class="features-split">
+            <div class="split-col text-col">
+                <h2>What is Luxury?</h2>
+                <div class="feature-item">
+                    <h3><i data-lucide="heart"></i> A community doing good</h3>
+                    <p>Luxury is a global online marketplace, where people come together to make, sell, buy, and collect unique artisan items.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i data-lucide="star"></i> Support independent creators</h3>
+                    <p>There’s no Etsy warehouse – just millions of people selling the things they love. We make the whole process easy, helping you connect directly with makers.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i data-lucide="shield-check"></i> Peace of mind</h3>
+                    <p>Your privacy is the highest priority of our dedicated team. And if you ever need assistance, we are always ready to step in for support.</p>
+                </div>
+            </div>
+            <div class="split-col img-col">
+                <img src="https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?w=800&q=80" alt="Craftsman at work">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="newsletter">
+                <h3>Yes! Send me exclusive offers, unique gift ideas, and personalized tips for shopping and selling on Luxury.</h3>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-col brand-col">
+                <div class="logo">Luxury.</div>
+                <p>Sophisticated artisan marketplace.</p>
+                <div class="socials">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Luxury blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Sell</h3>
+                <ul>
+                    <li><a href="#">Sell on Luxury</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Affiliates & Creators</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy settings</a></li>
+                    <li><a href="#">Trust & Safety</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="fb-left">
+                <span>&copy; 2026 Luxury, Inc.</span>
+            </div>
+            <div class="fb-right">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Interest-based ads</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Logic -->
+    <script src="js/app.js"></script>
+</body>
+</html>
