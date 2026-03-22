@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DigiNest | Premium Digital Marketplace</title>
+    <title>Velora | Premium Digital Marketplace</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +23,12 @@
         <div class="container">
             <div class="logo">
                 <i data-lucide="layers" class="gradient-text" style="width: 32px; height: 32px;"></i>
-                <span>DigiNest<span class="gradient-text">.</span></span>
+                <span>Velora<span class="gradient-text">.</span></span>
             </div>
             
             <nav class="nav-links">
                 <a href="#">Marketplace</a>
-                <a href="#subscriptions">Subscriptions</a>
+                <a href="#">Subscriptions</a>
                 <a href="#">Solutions</a>
                 <a href="#">Community</a>
                 <a href="#">Pricing</a>
@@ -91,59 +91,62 @@
         </section>
 
         <!-- Subscriptions Section -->
-        <section id="subscriptions" class="container" style="padding: 100px 0;">
+        <section class="subscriptions container" id="subscriptions">
             <div class="section-header" style="text-align: center; display: block; margin-bottom: 60px;">
-                <h2 style="font-size: 40px; margin-bottom: 16px;">Elevate Your <span class="gradient-text">Creator</span> Journey</h2>
-                <p style="color: var(--clr-text-muted); max-width: 600px; margin: 0 auto;">Choose a plan that fits your ambition. Get exclusive assets, early access, and priority support.</p>
+                <h2 style="margin-bottom: 16px;">Elevate Your <span class="gradient-text">Creator</span> Journey</h2>
+                <p style="color: var(--clr-text-muted); max-width: 600px; margin: 0 auto;">Choose a plan that fits your ambition and unlock premium features, exclusive assets, and priority support.</p>
             </div>
 
-            <div class="subscription-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
-                <!-- Basic Plan -->
-                <div class="glass-card" style="padding: 40px; border-radius: 32px; display: flex; flex-direction: column; transition: transform 0.3s ease;">
-                    <div style="margin-bottom: 32px;">
-                        <span style="color: var(--clr-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 13px;">Free</span>
-                        <h3 style="font-size: 28px; margin-top: 8px;">Starter</h3>
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="glass-card pricing-card">
+                    <div class="pricing-header">
+                        <span class="plan-tag">Community</span>
+                        <h3>Explorer</h3>
+                        <div class="price-val">$0<span>/mo</span></div>
                     </div>
-                    <div style="font-size: 48px; font-weight: 800; margin-bottom: 32px;">$0<span style="font-size: 16px; color: var(--clr-text-muted); font-weight: 400;">/month</span></div>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 40px; display: flex; flex-direction: column; gap: 16px;">
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Standard License</li>
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> 3 Monthly Free Downloads</li>
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Community Support</li>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check-circle" class="check"></i> 5 Downloads / mo</li>
+                        <li><i data-lucide="check-circle" class="check"></i> Standard License</li>
+                        <li><i data-lucide="check-circle" class="check"></i> Community Support</li>
+                        <li class="disabled"><i data-lucide="x-circle" class="uncheck"></i> Exclusive Asset Access</li>
+                        <li class="disabled"><i data-lucide="x-circle" class="uncheck"></i> AI Asset Generation</li>
                     </ul>
-                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">Get Started</button>
+                    <button class="btn btn-outline" style="width: 100%;">Start for Free</button>
                 </div>
 
                 <!-- Pro Plan -->
-                <div class="glass-card" style="padding: 40px; border-radius: 32px; display: flex; flex-direction: column; position: relative; border: 1px solid var(--clr-primary); transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 102, 255, 0.1);">
-                    <div style="position: absolute; top: -16px; left: 50%; translate: -50%; background: var(--clr-gradient); padding: 4px 16px; border-radius: 20px; font-size: 12px; font-weight: 700; color: white;">MOST POPULAR</div>
-                    <div style="margin-bottom: 32px;">
-                        <span style="color: var(--clr-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 13px;">Creator Pro</span>
-                        <h3 style="font-size: 28px; margin-top: 8px;">Professional</h3>
+                <div class="glass-card pricing-card featured-plan">
+                    <div class="pricing-header">
+                        <span class="plan-tag" style="background: var(--clr-primary); color: white;">Best Value</span>
+                        <h3>Professional</h3>
+                        <div class="price-val">$29<span>/mo</span></div>
                     </div>
-                    <div style="font-size: 48px; font-weight: 800; margin-bottom: 32px;">$24<span style="font-size: 16px; color: var(--clr-text-muted); font-weight: 400;">/month</span></div>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 40px; display: flex; flex-direction: column; gap: 16px;">
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Commercial License</li>
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Unlimited Downloads</li>
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Early Access to Drops</li>
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Priority Email Support</li>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check-circle" class="check"></i> Unlimited Downloads</li>
+                        <li><i data-lucide="check-circle" class="check"></i> Extended License</li>
+                        <li><i data-lucide="check-circle" class="check"></i> Priority Email Support</li>
+                        <li><i data-lucide="check-circle" class="check"></i> Exclusive Asset Access</li>
+                        <li><i data-lucide="check-circle" class="check"></i> AI Asset Generation</li>
                     </ul>
-                    <button class="btn btn-primary" style="width: 100%; margin-top: auto;">Go Pro Now</button>
+                    <button class="btn btn-primary" style="width: 100%;">Upgrade to Pro</button>
                 </div>
 
                 <!-- Enterprise Plan -->
-                <div class="glass-card" style="padding: 40px; border-radius: 32px; display: flex; flex-direction: column;">
-                    <div style="margin-bottom: 32px;">
-                        <span style="color: var(--clr-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 13px;">Studio</span>
-                        <h3 style="font-size: 28px; margin-top: 8px;">Enterprise</h3>
+                <div class="glass-card pricing-card">
+                    <div class="pricing-header">
+                        <span class="plan-tag">Teams</span>
+                        <h3>Enterprise</h3>
+                        <div class="price-val">$99<span>/mo</span></div>
                     </div>
-                    <div style="font-size: 48px; font-weight: 800; margin-bottom: 32px;">$99<span style="font-size: 16px; color: var(--clr-text-muted); font-weight: 400;">/month</span></div>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 40px; display: flex; flex-direction: column; gap: 16px;">
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Multi-seat Licensing</li>
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> 1-on-1 Creative Consult</li>
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Custom Asset Requests</li>
-                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> 24/7 Dedicated Manager</li>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check-circle" class="check"></i> Unlimited Everything</li>
+                        <li><i data-lucide="check-circle" class="check"></i> Full Commercial Rights</li>
+                        <li><i data-lucide="check-circle" class="check"></i> Dedicated Account Manager</li>
+                        <li><i data-lucide="check-circle" class="check"></i> Custom Asset Sourcing</li>
+                        <li><i data-lucide="check-circle" class="check"></i> API Integration</li>
                     </ul>
-                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">Contact Sales</button>
+                    <button class="btn btn-outline" style="width: 100%;">Contact Sales</button>
                 </div>
             </div>
         </section>
@@ -188,7 +191,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="logo" style="margin-bottom: 24px;">DigiNest<span class="gradient-text">.</span></div>
+                    <div class="logo" style="margin-bottom: 24px;">Velora<span class="gradient-text">.</span></div>
                     <p>Building the infrastructure for the next generation of digital creators and software pioneers.</p>
                     <div class="social-links">
                         <a href="#"><i data-lucide="twitter"></i></a>
@@ -227,7 +230,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 DigiNest Digital, Inc. All rights reserved.</p>
+                <p>&copy; 2026 Velora Digital, Inc. All rights reserved.</p>
                 <div style="display: flex; gap: 24px;">
                     <a href="#">System Status</a>
                     <a href="#">Security</a>
