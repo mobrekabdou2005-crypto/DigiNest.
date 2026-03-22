@@ -28,6 +28,7 @@
             
             <nav class="nav-links">
                 <a href="#">Marketplace</a>
+                <a href="#subscriptions">Subscriptions</a>
                 <a href="#">Solutions</a>
                 <a href="#">Community</a>
                 <a href="#">Pricing</a>
@@ -86,6 +87,64 @@
             
             <div class="product-grid" id="product-grid">
                 <!-- Products dynamically injected by JS -->
+            </div>
+        </section>
+
+        <!-- Subscriptions Section -->
+        <section id="subscriptions" class="container" style="padding: 100px 0;">
+            <div class="section-header" style="text-align: center; display: block; margin-bottom: 60px;">
+                <h2 style="font-size: 40px; margin-bottom: 16px;">Elevate Your <span class="gradient-text">Creator</span> Journey</h2>
+                <p style="color: var(--clr-text-muted); max-width: 600px; margin: 0 auto;">Choose a plan that fits your ambition. Get exclusive assets, early access, and priority support.</p>
+            </div>
+
+            <div class="subscription-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+                <!-- Basic Plan -->
+                <div class="glass-card" style="padding: 40px; border-radius: 32px; display: flex; flex-direction: column; transition: transform 0.3s ease;">
+                    <div style="margin-bottom: 32px;">
+                        <span style="color: var(--clr-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 13px;">Free</span>
+                        <h3 style="font-size: 28px; margin-top: 8px;">Starter</h3>
+                    </div>
+                    <div style="font-size: 48px; font-weight: 800; margin-bottom: 32px;">$0<span style="font-size: 16px; color: var(--clr-text-muted); font-weight: 400;">/month</span></div>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 40px; display: flex; flex-direction: column; gap: 16px;">
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Standard License</li>
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> 3 Monthly Free Downloads</li>
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Community Support</li>
+                    </ul>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">Get Started</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="glass-card" style="padding: 40px; border-radius: 32px; display: flex; flex-direction: column; position: relative; border: 1px solid var(--clr-primary); transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 102, 255, 0.1);">
+                    <div style="position: absolute; top: -16px; left: 50%; translate: -50%; background: var(--clr-gradient); padding: 4px 16px; border-radius: 20px; font-size: 12px; font-weight: 700; color: white;">MOST POPULAR</div>
+                    <div style="margin-bottom: 32px;">
+                        <span style="color: var(--clr-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 13px;">Creator Pro</span>
+                        <h3 style="font-size: 28px; margin-top: 8px;">Professional</h3>
+                    </div>
+                    <div style="font-size: 48px; font-weight: 800; margin-bottom: 32px;">$24<span style="font-size: 16px; color: var(--clr-text-muted); font-weight: 400;">/month</span></div>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 40px; display: flex; flex-direction: column; gap: 16px;">
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Commercial License</li>
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Unlimited Downloads</li>
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Early Access to Drops</li>
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Priority Email Support</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: auto;">Go Pro Now</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="glass-card" style="padding: 40px; border-radius: 32px; display: flex; flex-direction: column;">
+                    <div style="margin-bottom: 32px;">
+                        <span style="color: var(--clr-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 13px;">Studio</span>
+                        <h3 style="font-size: 28px; margin-top: 8px;">Enterprise</h3>
+                    </div>
+                    <div style="font-size: 48px; font-weight: 800; margin-bottom: 32px;">$99<span style="font-size: 16px; color: var(--clr-text-muted); font-weight: 400;">/month</span></div>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 40px; display: flex; flex-direction: column; gap: 16px;">
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Multi-seat Licensing</li>
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> 1-on-1 Creative Consult</li>
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> Custom Asset Requests</li>
+                        <li style="display: flex; align-items: center; gap: 12px;"><i data-lucide="check-circle" style="width: 20px; color: var(--clr-primary);"></i> 24/7 Dedicated Manager</li>
+                    </ul>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: auto;">Contact Sales</button>
+                </div>
             </div>
         </section>
 
