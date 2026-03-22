@@ -66,14 +66,14 @@ const initialProducts = [
 ];
 
 // --- APP STATE ---
-let digitalProducts = JSON.parse(localStorage.getItem('velora_assets')) || initialProducts;
+let digitalProducts = JSON.parse(localStorage.getItem('diginest_assets')) || initialProducts;
 let cartCount = 0;
 let isManagementMode = false;
 const busyButtons = new Set();
 
 // --- PERSISTENCE ---
 function saveToStorage() {
-    localStorage.setItem('velora_assets', JSON.stringify(digitalProducts));
+    localStorage.setItem('diginest_assets', JSON.stringify(digitalProducts));
 }
 
 // --- RENDER PRODUCTS ---
